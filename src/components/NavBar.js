@@ -26,7 +26,7 @@ const NavBar = () => {
             <CustomLink href='/projects' title="Projetos" className='mx-4' />
             <CustomLink href='/articles' title="Artigos" className='ml-4' />
         </nav>
-        <nav>
+        <nav className='flex items-center justify-center flex-wrap'>
             <Link href='/' target={"_blank"}><LinkedInIcon /></Link>
             <Link href='/' target={"_blank"}><GithubIcon /></Link>
             <Link href='/' target={"_blank"}><GmailIcon /></Link>

@@ -407,8 +407,15 @@ export const GithubIcon = ({ className, ...rest }) => (
     </svg>
   );
 
-export const GmailIcon = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} {...props}>
+export const GmailIcon = ({className, ...rest}) => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 48 48"
+      className={`w-full h-auto ${className}`}
+      {...rest}
+    >
     <path
       fill="#e0e0e0"
       d="M5.5 40.5h37A3.5 3.5 0 0 0 46 37V11a3.5 3.5 0 0 0-3.5-3.5h-37A3.5 3.5 0 0 0 2 11v26a3.5 3.5 0 0 0 3.5 3.5z"
