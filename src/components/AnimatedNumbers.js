@@ -6,7 +6,7 @@ export const AnimatedNumbers = ({value}) => {
   
     const motionValue = useMotionValue(0)
     const springValue = useSpring(motionValue, {duration: 3000})
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, {once: true})
   
     useEffect(() => {
       if(isInView) {
